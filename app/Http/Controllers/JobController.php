@@ -125,12 +125,12 @@ class JobController extends Controller
 
         try {
             // Attach the job to the candidate's applications using the many-to-many relationship
-            // $candidate->applications()->attach($job_id);
-            Application::create([
-                "candidate_id" => $candidate->id,
-                "job_id" => $job->id,
+            $candidate->applications()->attach($job_id);
+            // Application::create([
+            //     "candidate_id" => $candidate->id,
+            //     "job_id" => $job->id,
 
-            ]);
+            // ]);
 
             // Send email to candidate
             Mail::to($candidate->email)->send(new JobAppliedToCandidate($job, $candidate));
