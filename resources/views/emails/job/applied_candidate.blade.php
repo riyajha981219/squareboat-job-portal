@@ -1,0 +1,2 @@
+# Job Application Confirmation Hello {{ $candidateName }}, Thank you for applying to the job **"{{ $jobTitle }}"**. **Job Description:** {{ $jobDescription }} We have successfully received your application. The recruiter will review it shortly. Thanks,
+{{ config('app.name') }}

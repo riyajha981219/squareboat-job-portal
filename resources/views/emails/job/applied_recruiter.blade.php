@@ -1,0 +1,2 @@
+# New Job Application! Hello {{ $recruiterName }}, Good news! A new candidate has applied for your job posting: **"{{ $jobTitle }}"**. **Job Description:** {{ $jobDescription }} **Candidate Details:** * **Name:** {{ $candidateName }} * **Email:** {{ $candidateEmail }} Please log in to your recruiter dashboard to view their application and manage your listings. Thanks,
+{{ config('app.name') }}
